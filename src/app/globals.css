@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 20% 5%;
+    --foreground: 210 20% 98%;
+    --card: 230 20% 8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 230 20% 8%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 190 90% 50%;
+    --primary-foreground: 190 10% 5%;
+    --secondary: 230 15% 15%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 230 15% 12%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 30 90% 55%;
+    --accent-foreground: 30 10% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 230 15% 18%;
+    --input: 230 15% 18%;
+    --ring: 190 90% 50%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 230 20% 5%;
+    --foreground: 210 20% 98%;
+    --card: 230 20% 8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 230 20% 8%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 190 90% 50%;
+    --primary-foreground: 190 10% 5%;
+    --secondary: 230 15% 15%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 230 15% 12%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 30 90% 55%;
+    --accent-foreground: 30 10% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 230 15% 18%;
+    --input: 230 15% 18%;
+    --ring: 190 90% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  body.app-bg {
+    background-image: url('/app-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  body.app-bg .bg-card,
+  body.app-bg .bg-popover,
+  body.app-bg .bg-secondary,
+  body.app-bg .bg-muted {
+    background-color: hsl(var(--card) / 0.3) !important;
+    backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid hsl(var(--border) / 0.6) !important;
+    box-shadow:
+      0 8px 32px 0 rgba(0, 0, 0, 0.4),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+      inset 0 0 20px rgba(255, 255, 255, 0.05);
+  }
+
+  body.app-bg header,
+  body.app-bg aside,
+  body.app-bg main {
+    background-color: transparent !important;
+  }
+
+  body.app-bg .border-r,
+  body.app-bg .border-b,
+  body.app-bg .border-t,
+  body.app-bg .border-l {
+    border-color: hsl(var(--border) / 0.4) !important;
+  }
+}
+
+@keyframes pan {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 100% 0%
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+
+  100% {
+    transform: translateX(250%) skewX(-15deg);
+  }
+}
+
+@keyframes equalize {
+
+  0%,
+  100% {
+    height: 4px;
+    opacity: 0.4;
+    transform: scaleY(1);
+  }
+
+  50% {
+    height: 20px;
+    opacity: 1;
+    transform: scaleY(1.2);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
