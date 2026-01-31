@@ -132,3 +132,5 @@ This is a project by:
 - **Hari Prasanth L**
 - **Gowri Shankar M**
 - **Kaaviya SN**
+- **ECE 1st year**
+- **St Joseph's College of Engineering **
