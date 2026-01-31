@@ -62,33 +62,12 @@ A modern debt collection management system powered by AI, built with Next.js and
 ### DCA (Sample)
 - Check the initial data in `src/lib/data.ts` for DCA credentials
 
-## 🌐 Deploying to Vercel
-
-### Quick Deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/smart-collect)
-
-### Manual Deployment
-
-1. **Sign up/Login to Vercel**
-   - Visit [vercel.com](https://vercel.com)
-
-2. **Import your project**
-   - Connect your GitHub repository
-   - Or use Vercel CLI: `vercel`
+## 
 
 3. **Configure environment variables**
-   Add in Vercel dashboard:
    ```
    GOOGLE_GENAI_API_KEY=your_api_key_here
    ```
-
-4. **Deploy**
-   - Click "Deploy"
-   - Wait for build to complete
-   - Get your live URL!
-
-📖 **Detailed deployment guide**: See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)
 
 ## 📁 Project Structure
 
@@ -153,25 +132,3 @@ This is a project by:
 - **Hari Prasanth L**
 - **Gowri Shankar M**
 - **Kaaviya SN**
-
-## 📄 License
-
-This project is private and proprietary.
-
-## 🆘 Support
-
-For issues or questions:
-1. Check [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)
-2. Review [DEPLOY_QUICK_START.txt](./DEPLOY_QUICK_START.txt)
-3. Contact the development team
-
-## 🎉 Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- UI components from [shadcn/ui](https://ui.shadcn.com/)
-- AI powered by [Google Gemini](https://ai.google.dev/)
-- Deployed on [Vercel](https://vercel.com)
-
----
-
-Made with ❤️ by the Smart Collect Team
