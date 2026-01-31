@@ -1,6 +1,6 @@
 # Smart Collect
 
-A modern debt collection management system powered by AI, built with Next.js and Google Gemini.
+A modern debt collection management system powered by AI, built with Next.js and Google Gemini Api.
 
 ## 🚀 Features
 
